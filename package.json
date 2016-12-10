@@ -1,0 +1,27 @@
+{
+  "name": "instagal",
+  "version": "1.0.0",
+  "description": "Instagran Gallary",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pately1/Instagram_Gallery.git"
+  },
+  "author": "Yash Patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pately1/Instagram_Gallery/issues"
+  },
+  "homepage": "https://github.com/pately1/Instagram_Gallery#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.3.3",
+    "express": "^4.14.0",
+    "method-override": "^2.3.7",
+    "morgan": "^1.7.0"
+  }
+}
