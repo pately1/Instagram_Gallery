@@ -13,11 +13,11 @@
 ## Installation
 Run following commands in the terminal, install all the latest packages if asked for different versions.
 
-`npm install`
+    `npm install`
 
-`bower install`
+    `bower install`
 
-(After installation move the bower_components folder in the public folder otherwise the project won't run.)
+    (After installation move the bower_components folder in the public folder otherwise the project won't run.)
 ## Run
 `npm start`
 ## Note
