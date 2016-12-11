@@ -5,7 +5,7 @@
     'use strict';
 
     angular
-        .module('InstaApp', ['ngRoute'])
+        .module('InstaApp', ['ngRoute', 'ui.bootstrap.tpls', 'bootstrapLightbox'])
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider
                 .when('/gallery', {
@@ -13,5 +13,15 @@
                     controller: 'GalleryCtrl'
                 })
                 .otherwise({redirectTo: '/gallery'});
-        }]);
+        }])
+        .config(['$qProvider', function ($qProvider) {
+            $qProvider.errorOnUnhandledRejections(false);
+        }])
+        .config(function($sceDelegateProvider) {
+            $sceDelegateProvider.resourceUrlWhitelist([
+                // Allow same origin resource loads.
+                'self',
+                // Allow loading from our assets domain.  Notice the difference between * and **.
+                'https://api.instagram.com/**']);
+        });
 })();
