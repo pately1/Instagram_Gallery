@@ -1,8 +1,8 @@
 <div class="row gallery">
-    <div class="col-md-3">
-        <a href=""><img class="main" src="" alt=""></a>
-        <div class="imgInfo">
-            <img src="" alt="" class="avatar img-circle"> Posted by: Test
-        </div>
+    <div class="col-md-3" ng-repeat="img in images">
+        <a ng-click="openLightboxModal($index)"><img class="main" ng-src="{{img.images.low_resolution.url}}" alt=""></a>
+            <div class="imgInfo">
+                <img src="" alt="" class="avatar img-circle"> Posted by: {{img.user.username}}
+            </div>
     </div>
 </div>
